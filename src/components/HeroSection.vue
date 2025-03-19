@@ -173,11 +173,11 @@ const face = 'face.webp';
   }
   99% {
     transform: rotate(0deg) translateY(-1px) scale(1.1, 1.1);
-    animation-timing-function: cubic-bezier(0.7, 0, 1, 1);
+    
   }
   100% {
     transform: rotate(0deg) translateY(0px) scale(1.1, 1.1);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+
   }
 }
 
