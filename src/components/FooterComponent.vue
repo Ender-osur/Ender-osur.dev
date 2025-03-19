@@ -8,7 +8,7 @@
       <p class="text-gray-600 dark:text-gray-400">
         {{ new Date().getFullYear() }} | {{ $t('footer.rights') }}
       </p>
-      <a href="https://github.com/Ender-osur" referrerpolicy="no-referrer" target="_blank"
+      <a href="https://github.com/Ender-osur/vue_portfolio" referrerpolicy="no-referrer" target="_blank"
         >my Github</a
       >
     </div>
