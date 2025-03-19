@@ -91,8 +91,9 @@ const face = 'face.webp';
 
 .hi {
   display: inline-block;
-  transform: rotate(0deg) scale(1.1, 1.1);
-  animation: hiAnimation 1.5s;
+  transform-origin: bottom center;
+  animation: hiAnimation 1.5s ease-in-out forwards;
+  will-change: transform;
 }
 .iam {
   display: inline-block;
@@ -118,66 +119,39 @@ const face = 'face.webp';
     transform: scale(1, 1);
   }
 }
-
 @keyframes hiAnimation {
   0% {
-    transform: rotate(0deg) translateY(0px);
-  }
-  2% {
-    transform: rotate(-2deg) translateY(-1px);
-  }
-  4% {
-    transform: rotate(2deg) translateY(-2px);
-  }
-  6% {
-    transform: rotate(-3deg) translateY(-3px);
-  }
-  8% {
-    transform: rotate(3deg) translateY(-4px);
+    transform: rotate(0deg) translateY(0);
   }
   10% {
-    transform: rotate(-2deg) translateY(-5px);
-  }
-  12% {
-    transform: rotate(2deg) translateY(-6px);
-  }
-  14% {
-    transform: rotate(-3deg) translateY(-7px);
-  }
-  16% {
-    transform: rotate(3deg) translateY(-8px);
-  }
-  18% {
-    transform: rotate(-2deg) translateY(-9px);
+    transform: rotate(-5deg) translateY(-5px);
   }
   20% {
-    transform: rotate(2deg) translateY(-10px);
-  }
-  25% {
-    transform: rotate(-3deg) translateY(-12px);
+    transform: rotate(5deg) translateY(-10px);
   }
   30% {
-    transform: rotate(3deg) translateY(-14px);
-  }
-  35% {
-    transform: rotate(-3deg) translateY(-16px);
+    transform: rotate(-5deg) translateY(-15px);
   }
   40% {
-    transform: rotate(3deg) translateY(-18px);
-  }
-  45% {
-    transform: rotate(-2deg) translateY(-19px);
+    transform: rotate(5deg) translateY(-20px);
   }
   50% {
-    transform: rotate(2deg) translateY(-20px);
+    transform: rotate(-5deg) translateY(-25px);
   }
-  99% {
-    transform: rotate(0deg) translateY(-1px) scale(1.1, 1.1);
-    
+  60% {
+    transform: rotate(5deg) translateY(-20px);
+  }
+  70% {
+    transform: rotate(-5deg) translateY(-15px);
+  }
+  80% {
+    transform: rotate(5deg) translateY(-10px);
+  }
+  90% {
+    transform: rotate(-5deg) translateY(-5px);
   }
   100% {
-    transform: rotate(0deg) translateY(0px) scale(1.1, 1.1);
-
+    transform: rotate(0deg) translateY(0);
   }
 }
 
@@ -189,5 +163,11 @@ const face = 'face.webp';
   100% {
     stroke-dashoffset: 0;
   }
+}
+
+.hi, .iam, svg path {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 </style>
