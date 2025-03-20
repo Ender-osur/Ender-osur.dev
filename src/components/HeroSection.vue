@@ -165,7 +165,9 @@ const face = 'face.webp';
   }
 }
 
-.hi, .iam, svg path {
+.hi,
+.iam,
+svg path {
   transform: translateZ(0);
   backface-visibility: hidden;
   perspective: 1000px;
