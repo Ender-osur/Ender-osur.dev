@@ -50,7 +50,7 @@ const softSkillsArray = computed(() => {
             </h3>
             <ul class="text-gray-700 dark:text-gray-300 gap-4 flex flex-col items-center">
               <li v-for="(softSkill, index) in softSkillsArray" :key="index" class="text-wrap">
-                <span class="text-[#5c3929] dark:text-[#ff9966] ">{{ softSkill.header }}</span>:
+                <span class="text-[#5c3929] dark:text-[#ff9966]">{{ softSkill.header }}</span>:
                 <span class="text-gray-700 dark:text-gray-300">{{ softSkill.body }}</span>
               </li>
             </ul>
