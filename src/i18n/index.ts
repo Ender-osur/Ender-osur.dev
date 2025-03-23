@@ -52,13 +52,13 @@ const messages = {
     projects: {
       title: 'Projects',
       viewProject: 'View Project',
-      title1: 'Web for a client',
+      title1: 'Website created in 1 hour for a client',
       description1: 'A simple yet elegant website for a client company',
       title2: 'Alegra technical test',
       description2:
         'It is a web to search images with custom search api of google and generate alegra invoices',
-      title3: 'Weather App',
-      description3: 'A simple and functional weather app',
+      title3: 'Administrative portal for soccer fields for a client',
+      description3: 'Simple and functional website to manage payments made by customers to different soccer field recreation establishments.',
     },
     contact: {
       title: 'Get in Touch',
@@ -122,13 +122,13 @@ const messages = {
     projects: {
       title: 'Proyectos',
       viewProject: 'Ver Proyecto',
-      title1: 'Sitio web para un cliente',
+      title1: 'Web creada en 1 hora para un cliente',
       description1: 'Un sitio web simple pero elegante para una empresa cliente',
       title2: 'Prueba técnica de Alegra',
       description2:
         'Es una web para buscar imagenes con api de busqueda personalizada de google y generar facturas con alegra',
-      title3: 'Aplicación de clima',
-      description3: 'Una aplicación de clima simple y funcional',
+      title3: 'Portal administrativo de canchas de fútbol para un cliente',
+      description3: 'Página web simple y funcional para administrar los pagos realizados por clientes a diferentes establecimientos de recreación de canchas de fútbol',
     },
     contact: {
       title: 'Contacto',

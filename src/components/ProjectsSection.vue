@@ -26,17 +26,23 @@ watchEffect(() => {
     {
       title: t('projects.title2'),
       description: t('projects.description2'),
-      iframe: 'https://testalegra-production.up.railway.app',
+      image: 'image4.webp',
       tags: ['Vue.js', 'Tailwindcss', 'Node/Express/Proxy', 'Railway', 'Pinia'],
       link: 'https://testalegra-production.up.railway.app/home',
     },
     {
       title: t('projects.title3'),
       description: t('projects.description3'),
-
-      image: 'https://via.placeholder.com/600x400',
-      tags: ['Socket.io', 'Express', 'Redis'],
-      link: '#',
+      image: 'image3.webp',
+      tags: ['TailwindCSS', 'React', 'MaterialUI', 'i18n', 'Pagination'],
+      link: 'https://web-portal-production-d02a.up.railway.app/',
+    },
+    {
+      title: t('projects.title3'),
+      description: t('projects.description3'),
+      image: 'image3.webp',
+      tags: ['TailwindCSS', 'React', 'MaterialUI', 'i18n', 'Pagination'],
+      link: 'https://web-portal-production-d02a.up.railway.app/',
     },
   ];
 });
