@@ -24,25 +24,18 @@ watchEffect(() => {
       link: 'https://ing-santi-garcia.github.io/ing-santi-garcia/',
     },
     {
-      title: t('projects.title2'),
-      description: t('projects.description2'),
-      image: 'image4.webp',
-      tags: ['Vue.js', 'Tailwindcss', 'Node/Express/Proxy', 'Railway', 'Pinia'],
-      link: 'https://testalegra-production.up.railway.app/home',
-    },
-    {
       title: t('projects.title3'),
       description: t('projects.description3'),
       image: 'image3.webp',
-      tags: ['TailwindCSS', 'React', 'MaterialUI', 'i18n', 'Pagination'],
+      tags: ['TailwindCSS', 'React', 'MaterialUI', 'i18n', 'Zustand'],
       link: 'https://web-portal-production-d02a.up.railway.app/',
     },
     {
       title: t('projects.title3'),
       description: t('projects.description3'),
-      image: 'image3.webp',
-      tags: ['TailwindCSS', 'React', 'MaterialUI', 'i18n', 'Pagination'],
-      link: 'https://web-portal-production-d02a.up.railway.app/',
+      image: 'app.webp',
+      tags: ['React Native', 'Expo', '118n', 'TS', 'Redux'],
+      link: 'https://github.com/Ender-osur/cardio_analyzer',
     },
   ];
 });
