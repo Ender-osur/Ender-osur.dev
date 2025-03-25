@@ -44,22 +44,22 @@ watchEffect(() => {
 <template>
   <section
     id="projects"
-    class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300 flex justify-center items-center"
+    class="relative py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300 flex justify-center items-center"
   >
-    <div class="container mx-auto px-4 gap-8 flex flex-col" data-aos="fade-up">
+    <div class="container relative mx-auto px-4 gap-8 flex flex-col" data-aos="fade-up">
       <h2
         class="text-4xl font-bold text-center tracking-[2px] text-gray-700 dark:text-gray-300 transition-colors"
       >
         {{ $t('projects.title') }}
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div
           v-for="project in projects"
           :key="project.title"
-          class="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-102 flex flex-col justify-between items-center"
+          class="relative h-full bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-102 flex flex-col justify-between items-center "
           data-aos="fade-up"
         >
-          <div class="p-6">
+          <div class="p-4 flex flex-col relative h-full justify-between">
             <div>
               <iframe
                 v-if="project.iframe"
@@ -78,39 +78,45 @@ watchEffect(() => {
                 loading="lazy"
               />
             </div>
-            <h3 class="text-xl font-semibold mb-2 text-gray-700 dark:text-gray-300">
-              {{ project.title }}
-            </h3>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">{{ project.description }}</p>
-            <div class="flex flex-wrap gap-4 mb-0 py-2">
-              <span
-                v-for="tag in project.tags"
-                :key="tag"
-                class="py-1 text-sm text-cyan-800 dark:text-cyan-300"
-              >
-                {{ tag }}
-              </span>
+            <div class="flex flex-col relative h-full justify-between">
+              <main class="w-full flex flex-col justify-center gap-2">
+                <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300">
+                  {{ project.title }}
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 tracking-tighter leading-5">{{ project.description }}</p>
+                <div class="flex flex-wrap gap-3 justify-center">
+                  <span
+                    v-for="tag in project.tags"
+                    :key="tag"
+                    class="text-sm text-cyan-800 dark:text-cyan-300"
+                  >
+                    {{ tag }}
+                  </span>
+                </div>
+              </main>
+              <footer class="flex justify-center mt-auto">
+                <a
+                  :href="project.link"
+                  class="text-primary hover:text-primary/80 font-medium inline-flex items-center pb-4"
+                  target="_blank"
+                >
+                  {{ $t('projects.viewProject') }}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 ml-1"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </footer>
             </div>
           </div>
-          <a
-            :href="project.link"
-            class="text-primary hover:text-primary/80 font-medium inline-flex items-center pb-4"
-            target="_blank"
-          >
-            {{ $t('projects.viewProject') }}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 ml-1"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
         </div>
       </div>
     </div>
