@@ -4,7 +4,7 @@ import { useDark } from '@vueuse/core';
 
 import NavbarComponent from '../NavbarComponent.vue';
 import FooterComponent from '../FooterComponent.vue';
-import SonMoonComponent from '../SonMoonComponent.vue';
+import SunMoonComponent from '../SunMoonComponent.vue';
 import ScrollTop from '../ScrollTop.vue';
 
 const isDark = useDark();
@@ -15,7 +15,7 @@ const isDark = useDark();
     :class="{ dark: isDark }"
     class="main bg-gray-200 dark:bg-gray-900 transition-colors duration-300 flex"
   >
-    <SonMoonComponent />
+    <SunMoonComponent />
     <header class="shrink-[0] min-h-5">
       <NavbarComponent />
     </header>
