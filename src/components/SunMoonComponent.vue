@@ -6,7 +6,7 @@ const isDark = useDark();
 
 <template>
   <div
-    class="moonSunContainer z-10 top-5 -left-85 absolute flex justify-center items-center perspective-[1000px] gap-0"
+    class="moonSunContainer top-5 -left-85 absolute flex justify-center items-center perspective-[1000px] gap-0"
     :class="{ darkMode: isDark, lightMode: !isDark }"
   >
     <div class="moon celestial-body relative w-[200px] h-[200px]">
@@ -42,13 +42,13 @@ const isDark = useDark();
   width: 100%;
   height: 100%;
   object-fit: contain;
-  z-index: 3;
+  z-index: 2;
 }
 
 .glow-effect {
   position: absolute;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
   filter: blur(30px);
   opacity: 0;
   transition:
