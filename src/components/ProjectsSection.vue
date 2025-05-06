@@ -24,8 +24,8 @@ watchEffect(() => {
       link: 'https://ing-santi-garcia.github.io/ing-santi-garcia/',
     },
     {
-      title: t('projects.title3'),
-      description: t('projects.description3'),
+      title: t('projects.title2'),
+      description: t('projects.description2'),
       image: 'image3.webp',
       tags: ['TailwindCSS', 'React', 'MaterialUI', 'i18n', 'Zustand'],
       link: 'https://web-portal-production-d02a.up.railway.app/',
@@ -34,8 +34,15 @@ watchEffect(() => {
       title: t('projects.title3'),
       description: t('projects.description3'),
       image: 'app.webp',
-      tags: ['React Native', 'Expo', '118n', 'TS', 'Redux'],
+      tags: ['React Native', 'Expo', 'i18n', 'TS', 'Redux'],
       link: 'https://github.com/Ender-osur/cardio_analyzer',
+    },
+    {
+      title: t('projects.title4'),
+      description: t('projects.description4'),
+      image: 'image4.webp',
+      tags: ['Vuejs', 'Tailwind 4', 'i18n', 'TS', 'Node+Express','PostgreSQL', 'Hexagonal Arch', ''],
+      link: 'https://github.com/Ender-osur/fe_infringment-defender',
     },
   ];
 });
